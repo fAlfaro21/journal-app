@@ -12,6 +12,7 @@
 /build
 
 # journal-app
+.env.production
 .env.development
 .env.test
 
