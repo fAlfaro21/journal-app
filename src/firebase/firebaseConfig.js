@@ -4,7 +4,7 @@ import 'firebase/auth'
 
 //console.log(process.env);
 
-//PARA DESARROLLO
+//PARA DESARROLLO Y PRODUCCION
 export const firebaseConfig = {
     apiKey: process.env.REACT_APP_APIKEY,
     authDomain: process.env.REACT_APP_AUTHDOMAIN,
