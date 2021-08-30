@@ -1,0 +1,76 @@
+
+//Con esta clase centras el titulo de la pagina
+.auth__main {
+    //Alinea en base a la horizontal;
+    align-items: center;
+    background-color: $primary;
+    display: flex;
+    //Jistifica en base a la vertical
+    justify-content: center;
+    margin: 0px;
+    //Define el 100% de la vista vertical(vh=view height) y 100% de la vista horizontal (vw =view width)
+    height: 100vh;
+    width: 100vw;
+}
+
+//Con esta clase defines la caja del titulo de la pagina
+.auth__box-container {
+    background-color: white;
+    box-shadow: 0px 3x $dark-grey;
+    border-radius: 2px;
+    //Tamano de la caja:
+    padding: 20px;
+    width: 250px;
+}
+
+.auth__title {
+    // El darken es de sass: al color que yo le diga, le aplica un grado de oscuridad
+    color: darken($color: $primary, $amount:20  );
+    margin-bottom: 20px;
+}
+
+.auth__input {
+    //El color del texto del input
+    color: $dark-grey;
+    //Le suprime el borde
+    border: 0px;
+    //Dibuja la linea inferior de la caja del input
+    border-bottom: 1px solid $light-grey;
+    //Font del texto
+    font-size: 16px;
+    //Le agrega un margen debajo de la caja del input
+    margin-bottom: 10px;
+    height: 20px;
+    width: 100%;
+
+    //Aplica una animacion al border inferior de la caja cuando se aplica el focus de abajo
+    transition: border-bottom .3 ease;
+
+    //solo cuando el cursor esta sobre la caja, pinta el borde inferior de la caja
+    &:focus {
+        border-bottom: 1px solid $primary;
+        outline: none;
+    }
+}
+
+.auth__social_networks {
+    //Alinea en base a la vertical
+    align-items: center;
+    display: flex;
+    //Jistifica en base a la horizontal
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.auth__alert-error {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}

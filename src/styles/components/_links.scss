@@ -1,0 +1,11 @@
+
+//Esto es para quitar el subrayado a link "Create new account"
+.link {
+    color: $dark-grey;
+    text-decoration: none;
+
+    //El subrayado saldra cuando hagas hover sobre el link
+    &:hover {
+        text-decoration: underline;
+    }
+}
